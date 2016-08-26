@@ -1,45 +1,47 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
-<head>
+		<title>WELCOME TO VOTING SYSTEM VERSION 3</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="<?php echo site_url('assets/plugins/bootstrap/dist/css/bootstrap.min.css'); ?>">
+		<link rel="stylesheet" href="<?php echo site_url('assets/plugins/font-awesome/css/font-awesome.min.css'); ?>">
+		<link rel="stylesheet" href="<?php echo site_url('assets/plugins/ionicons/css/ionicons.min.css'); ?>">
+		<link rel="stylesheet" href="<?php echo site_url('assets/dist/css/AdminLTE.min.css'); ?>">
+		<link rel="stylesheet" href="<?php echo site_url('assets/dist/css/skins/skin-blue.min.css'); ?>">
 
-	<title>WELCOME TO VOTING SYSTEM VERSION 3</title>
+		<script src="<?php echo site_url('assets/plugins/jquery/dist/jquery.min.js'); ?>"></script>
 
-	<!-- Tell the browser to be responsive to screen width -->
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<!-- Bootstrap 3.3.5 -->
-	<link rel="stylesheet" href="">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- Ionicons -->
-	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<!-- Theme style -->
-	<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-	<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
-	      page. However, you can choose any other skin. Make sure you
-	      apply the skin class to the body tag so the changes take effect.
-	-->
+	</head>
+	<body class="skin-blue sidebar-mini">
 
-	<link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+		<div class="wrapper">
+			<?php $this->load->view('partials/main-header'); ?>
+			<?php $this->load->view('partials/main-sidebar'); ?>
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+			<div class="content-wrapper">
+				<?php $this->load->view('partials/content-header'); ?>
+				<section class="content">
+	           <?php $this->load->view($main_content); ?>
+	         </section>
+			</div>
 
-</head>
+			<?php $this->load->view('partials/main-footer'); ?>
+			<?php $this->load->view('partials/control-sidebar'); ?>
+		</div>
 
-<body>
+		<script src="<?php echo site_url('assets/plugins/bootstrap/dist/js/bootstrap.min.js'); ?>"></script>
+		<script src="<?php echo site_url('assets/dist/js/app.min.js'); ?>"></script>
 
-	<?php $this->load->view('partials/main-header'); ?>
-	<?php $this->load->view($main_content); ?>
-	<?php $this->load->view('partials/main-footer'); ?>
-
-</body>
-
+	</body>
 </html>
