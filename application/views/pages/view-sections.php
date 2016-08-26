@@ -1,1 +1,1 @@
-<pre><?php //var_dump($sections); ?></pre>
+<h1>Hello sections module</h1>
